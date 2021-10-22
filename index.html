@@ -70,7 +70,7 @@
 		</style>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<script type="text/javascript">
-			var le_to_pvu = 665/0.95, cost = 300;
+			var le_to_pvu = 731/0.95, cost = 300;
 			var rarity_svg = [
 				'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjMwIiB2aWV3Qm94PSIwIDAgODIgMjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHg9IjAuNSIgeT0iMC41IiB3aWR0aD0iODEiIGhlaWdodD0iMTkiIHJ4PSI0LjUiIGZpbGw9InVybCgjcGFpbnQwX2xpbmVhcikiIHN0cm9rZT0idXJsKCNwYWludDFfbGluZWFyKSIvPgo8cmVjdCB4PSIxIiB5PSIxIiB3aWR0aD0iODAiIGhlaWdodD0iMTgiIHJ4PSI0IiBmaWxsPSIjMTkyODI2Ii8+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MF9saW5lYXIiIHgxPSI0MSIgeTE9IjAiIHgyPSI0MSIgeTI9IjIwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiNFQUZGRTQiLz4KPHN0b3Agb2Zmc2V0PSIwLjQ2ODc1IiBzdG9wLWNvbG9yPSIjQkNFQ0I3Ii8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzZDOUQ4NSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MV9saW5lYXIiIHgxPSI0MSIgeTE9IjAiIHgyPSI0MSIgeTI9IjIwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiMyMzY4MzYiLz4KPHN0b3Agb2Zmc2V0PSIwLjUzMTI1IiBzdG9wLWNvbG9yPSIjMzU3RDQzIi8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzFDNTUzQSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+Cjwvc3ZnPgo=',
 				'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjMwIiB2aWV3Qm94PSIwIDAgODIgMjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHg9IjAuNSIgeT0iMC41IiB3aWR0aD0iODEiIGhlaWdodD0iMTkiIHJ4PSI0LjUiIGZpbGw9InVybCgjcGFpbnQwX2xpbmVhcikiIHN0cm9rZT0idXJsKCNwYWludDFfbGluZWFyKSIvPgo8cmVjdCB4PSIxIiB5PSIxIiB3aWR0aD0iODAiIGhlaWdodD0iMTgiIHJ4PSI0IiBmaWxsPSIjMUMyMTQ4Ii8+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MF9saW5lYXIiIHgxPSI0MSIgeTE9IjAiIHgyPSI0MSIgeTI9IjIwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiM4NUNFRkYiLz4KPHN0b3Agb2Zmc2V0PSIwLjQ2ODc1IiBzdG9wLWNvbG9yPSIjNDk4RUMxIi8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzNDNjE4QSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MV9saW5lYXIiIHgxPSI0MSIgeTE9IjAiIHgyPSI0MSIgeTI9IjIwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiM1N0E1Q0YiLz4KPHN0b3Agb2Zmc2V0PSIwLjUzMTI1IiBzdG9wLWNvbG9yPSIjMzQ4MkMxIi8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzFDNEY5QSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+Cjwvc3ZnPgo=',
@@ -241,7 +241,7 @@
 				<div class="flex-grow flex justify-between items-end text-xs">
 					<div class="text-left"> LE: <span id="le">1500</span>/<span id="le_tm">48</span> Hour </div>
 					<div class="text-center"> <span id="le_ph">31.25</span> LE/Hour </div>
-					<div class="text-right"> <span id="sap_pw">51</span> Sap/Wk<br/> <span id="pvu_pm">31</span> PVU/Mth </div>
+					<div class="text-right"> <span id="sap_pw">51</span> Sap/Wk<br/> <span id="pvu_pm">28</span> PVU/Mth </div>
 				</div>
 				<div class="flex justify-center">
 					<input type="range" id="rate" class="slider" min="1" max="100" value="100" readonly="1" disabled/>
